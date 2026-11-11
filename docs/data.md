@@ -10,10 +10,14 @@
 | `session` | str | 必填 |
 | `action` | str | 必填 |
 | `revenue` | float | 必填 |
-| `cost` | float | 允许空值，空值不是零 |
-| `propensity` | float | 允许空值，空值不是零 |
-| `week` | int | 允许空值，空值不是零 |
-| `segment` | str | 允许空值，空值不是零 |
-| `candidate` | str | 允许空值，空值不是零 |
+| `cost` | float | 必填 |
+| `propensity` | float | 必填 |
+| `week` | int | 必填 |
+| `segment` | str | 必填 |
+| `candidate` | str | 必填 |
 
 时间字段 day、week、tick、hour、minute、cycle、start_day、reported_day、known_at、visible_at、opened、observed 均以各字段名所述的相对时间单位表示整数；不同字段并不必然代表同一种时间。缺少的登记码与浓度等信息保持为空。示例只表达产品数据结构，不能代替实际调查资料。
+
+## 业务字段语义
+
+revenue 和 cost 为元；propensity 是行为策略选择实际 action 的概率，范围 (0,1]。candidate 是候选策略推荐动作，不是历史上另一次实际投放。week 是会话周，segment 是投放前客群。
