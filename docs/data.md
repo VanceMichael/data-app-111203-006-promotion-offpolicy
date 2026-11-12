@@ -20,4 +20,4 @@
 
 ## 业务字段语义
 
-revenue 和 cost 为元；propensity 是行为策略选择实际 action 的概率，范围 (0,1]。candidate 是候选策略推荐动作，不是历史上另一次实际投放。week 是会话周，segment 是投放前客群。
+revenue 和 cost 为元；propensity 是行为策略选择实际 action 的概率，范围 (0,1]。candidate 是候选策略推荐动作，不是历史上另一次实际投放。week 是会话周，segment 是投放前客群。净收益以 revenue-cost 为准；离线策略评估的折切分、支持域检查与估计口径见 `docs/ope.md`。

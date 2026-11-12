@@ -1,0 +1,595 @@
+{
+  "config": {
+    "min_train_weeks": 1,
+    "penalties": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ]
+  },
+  "folds": [
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": 10.818032843253599,
+          "action:A2": 28.00066776783433,
+          "intercept": 30.733004356155615,
+          "segment:S1": 0.46769885805878014,
+          "segment:S2": -0.04401100021139784,
+          "segment:S3": -1.2852914924341137
+        },
+        "penalty": 1.0,
+        "scores": [],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "fallback_single_train_week"
+      },
+      "train_fingerprint": "18cfd1e017c81acd4a08cfcf6aaf31ea2e21afbe9ed2652bada746cd7ae98982",
+      "train_rows": 24,
+      "train_weeks": [
+        0
+      ],
+      "validation_week": 1
+    },
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": -7.11991029429186,
+          "action:A2": 4.307826281123976,
+          "intercept": 44.23599308577426,
+          "segment:S1": 0.8980357755761258,
+          "segment:S2": -0.38502909004221186,
+          "segment:S3": -0.6956497711315303
+        },
+        "penalty": 10.0,
+        "scores": [
+          {
+            "mse": 857.6851096504453,
+            "penalty": 0.01
+          },
+          {
+            "mse": 834.1682018659221,
+            "penalty": 0.1
+          },
+          {
+            "mse": 673.1149312224682,
+            "penalty": 1.0
+          },
+          {
+            "mse": 397.82680858636076,
+            "penalty": 10.0
+          }
+        ],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "inner_forward"
+      },
+      "train_fingerprint": "0a2abd9e3927dfe95fd715b2acb93d82b33b6076af663e87bdf072dfbe30cae8",
+      "train_rows": 48,
+      "train_weeks": [
+        0,
+        1
+      ],
+      "validation_week": 2
+    },
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": -1.039919087380301,
+          "action:A2": -2.4824193934764227,
+          "intercept": 44.96350081156822,
+          "segment:S1": -0.07625566773748234,
+          "segment:S2": -0.39695144840844393,
+          "segment:S3": -0.31513782448124644
+        },
+        "penalty": 10.0,
+        "scores": [
+          {
+            "mse": 760.1214821633764,
+            "penalty": 0.01
+          },
+          {
+            "mse": 747.2717915492435,
+            "penalty": 0.1
+          },
+          {
+            "mse": 656.6014601599727,
+            "penalty": 1.0
+          },
+          {
+            "mse": 460.3901289577275,
+            "penalty": 10.0
+          }
+        ],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "inner_forward"
+      },
+      "train_fingerprint": "60fc2a0a38ff5820905ae3e6d9d335af8daec1a2237709c91a1128d32f0315fe",
+      "train_rows": 72,
+      "train_weeks": [
+        0,
+        1,
+        2
+      ],
+      "validation_week": 3
+    },
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": 0.6439865859234589,
+          "action:A2": 2.1771671145546128,
+          "intercept": 43.08324879982197,
+          "segment:S1": -0.010983232367653315,
+          "segment:S2": 0.19960396497882604,
+          "segment:S3": -0.2863870583282189
+        },
+        "penalty": 10.0,
+        "scores": [
+          {
+            "mse": 584.6484434982126,
+            "penalty": 0.01
+          },
+          {
+            "mse": 575.887126730126,
+            "penalty": 0.1
+          },
+          {
+            "mse": 513.7146709858256,
+            "penalty": 1.0
+          },
+          {
+            "mse": 375.17182730288397,
+            "penalty": 10.0
+          }
+        ],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "inner_forward"
+      },
+      "train_fingerprint": "963bc2f2546b98148b682d056bfa3188761c912a7b0461b99bc6b83539dcf412",
+      "train_rows": 96,
+      "train_weeks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "validation_week": 4
+    },
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": -5.075856269922533,
+          "action:A2": -0.9488582431885341,
+          "intercept": 45.66461798297135,
+          "segment:S1": 0.07959571488863407,
+          "segment:S2": 0.0744052635511959,
+          "segment:S3": 0.32897660599004686
+        },
+        "penalty": 10.0,
+        "scores": [
+          {
+            "mse": 543.1383287806631,
+            "penalty": 0.01
+          },
+          {
+            "mse": 536.4721562303948,
+            "penalty": 0.1
+          },
+          {
+            "mse": 488.9784235419056,
+            "penalty": 1.0
+          },
+          {
+            "mse": 380.8190381836685,
+            "penalty": 10.0
+          }
+        ],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "inner_forward"
+      },
+      "train_fingerprint": "ad97c9e48daed6755367a646b5f3375892e3262f9483c8b20606daa61a0b24ee",
+      "train_rows": 120,
+      "train_weeks": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "validation_week": 5
+    },
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": -1.8523947590445535,
+          "action:A2": -4.301862716275562,
+          "intercept": 45.43462467875551,
+          "segment:S1": 0.16883172560781406,
+          "segment:S2": 0.10947468880619152,
+          "segment:S3": 0.45070978349442453
+        },
+        "penalty": 10.0,
+        "scores": [
+          {
+            "mse": 516.3462581470437,
+            "penalty": 0.01
+          },
+          {
+            "mse": 510.9709980298745,
+            "penalty": 0.1
+          },
+          {
+            "mse": 472.5708669560921,
+            "penalty": 1.0
+          },
+          {
+            "mse": 383.09784346370486,
+            "penalty": 10.0
+          }
+        ],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "inner_forward"
+      },
+      "train_fingerprint": "4a15c9ac70cdf90eaac43fc8729612cfdf938d0e12f0cebd3bb2dfa33a32ea4a",
+      "train_rows": 144,
+      "train_weeks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "validation_week": 6
+    },
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": -0.3317018698533446,
+          "action:A2": 0.030644951985489957,
+          "intercept": 43.177147834527176,
+          "segment:S1": 0.22546065542347313,
+          "segment:S2": 0.21486515017830318,
+          "segment:S3": 0.6930183626893557
+        },
+        "penalty": 10.0,
+        "scores": [
+          {
+            "mse": 489.81343924729725,
+            "penalty": 0.01
+          },
+          {
+            "mse": 485.25828757920516,
+            "penalty": 0.1
+          },
+          {
+            "mse": 452.5446660303848,
+            "penalty": 1.0
+          },
+          {
+            "mse": 373.5327915945559,
+            "penalty": 10.0
+          }
+        ],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "inner_forward"
+      },
+      "train_fingerprint": "b62c1b49ac3c3c6df35a99c0f8e36f31d2c652e3dfa8588259b6d031bebde1d5",
+      "train_rows": 168,
+      "train_weeks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "validation_week": 7
+    },
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": -4.160861238599433,
+          "action:A2": -2.1997910464201342,
+          "intercept": 45.215725176463394,
+          "segment:S1": 0.48935236525328113,
+          "segment:S2": 0.10628209435584388,
+          "segment:S3": 0.5773025550443907
+        },
+        "penalty": 10.0,
+        "scores": [
+          {
+            "mse": 467.3150081860711,
+            "penalty": 0.01
+          },
+          {
+            "mse": 463.4134027614139,
+            "penalty": 0.1
+          },
+          {
+            "mse": 435.4000966556176,
+            "penalty": 1.0
+          },
+          {
+            "mse": 367.8633647869498,
+            "penalty": 10.0
+          }
+        ],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "inner_forward"
+      },
+      "train_fingerprint": "ea560f54f7b3ef3f5f72d3f97f2a9ecb1031a634fc616eb87f5888517aee12fe",
+      "train_rows": 192,
+      "train_weeks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "validation_week": 8
+    },
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": -2.1392455292421992,
+          "action:A2": -4.841170763115391,
+          "intercept": 45.44080036936806,
+          "segment:S1": 0.17002693411482087,
+          "segment:S2": 0.20211470439671844,
+          "segment:S3": 0.6594182509352444
+        },
+        "penalty": 10.0,
+        "scores": [
+          {
+            "mse": 460.1077519624506,
+            "penalty": 0.01
+          },
+          {
+            "mse": 456.6898262558496,
+            "penalty": 0.1
+          },
+          {
+            "mse": 432.1391322815044,
+            "penalty": 1.0
+          },
+          {
+            "mse": 372.7213602625565,
+            "penalty": 10.0
+          }
+        ],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "inner_forward"
+      },
+      "train_fingerprint": "76386210a72069e9f83e00c783a9726a3da35c68f7ccc1f0f48ecaddb42166f9",
+      "train_rows": 216,
+      "train_weeks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "validation_week": 9
+    },
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": -0.9108593429779466,
+          "action:A2": -2.0155390770695694,
+          "intercept": 43.9934302018547,
+          "segment:S1": 0.09541623697542621,
+          "segment:S2": 0.13841143080426654,
+          "segment:S3": 0.6633883244406246
+        },
+        "penalty": 10.0,
+        "scores": [
+          {
+            "mse": 438.19999947858247,
+            "penalty": 0.01
+          },
+          {
+            "mse": 435.13237732958595,
+            "penalty": 0.1
+          },
+          {
+            "mse": 413.0268397484045,
+            "penalty": 1.0
+          },
+          {
+            "mse": 358.21371424969846,
+            "penalty": 10.0
+          }
+        ],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "inner_forward"
+      },
+      "train_fingerprint": "9da15f6f7da7a40d1e9722a92eaa7d01142b2396ad6073540328f7f11b41fda2",
+      "train_rows": 240,
+      "train_weeks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "validation_week": 10
+    },
+    {
+      "model": {
+        "action_levels": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "coefficients": {
+          "action:A1": -3.910334646709292,
+          "action:A2": -3.361781658532872,
+          "intercept": 45.589679540234364,
+          "segment:S1": -0.24786979718143215,
+          "segment:S2": 0.26772894098662714,
+          "segment:S3": 0.4934368337445769
+        },
+        "penalty": 10.0,
+        "scores": [
+          {
+            "mse": 426.5574074153101,
+            "penalty": 0.01
+          },
+          {
+            "mse": 423.8047765188714,
+            "penalty": 0.1
+          },
+          {
+            "mse": 403.9891084652291,
+            "penalty": 1.0
+          },
+          {
+            "mse": 355.23105451444167,
+            "penalty": 10.0
+          }
+        ],
+        "segment_levels": [
+          "S0",
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "selection": "inner_forward"
+      },
+      "train_fingerprint": "105140ef60e863ec75f5f1cd764187bfe967944be32561bee4ec8c0c92e0d2ce",
+      "train_rows": 264,
+      "train_weeks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "validation_week": 11
+    }
+  ],
+  "input_fingerprint": "2cdde8b83528efa985f9a53588012122fef8a1aaa0e89ae775d4290137ad4ed5",
+  "kind": "offpolicy_reward_model",
+  "product": "promotion-offpolicy",
+  "rows": 288,
+  "schema_version": 1
+}
